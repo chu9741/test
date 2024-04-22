@@ -1,264 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <title>Lottery Number is...</title>
     <style>
-      .font {
-        font-family: "Nanum Gothic", sans-serif;
-        font-weight: bolder;
-        font-size: 1.5em;
-        font-style: normal;
+      input {
+        margin-left: 15px;
+        color: aquamarine;
+        background: #000;
+        font-size: 1.5rem;
       }
-      .fontleft {
-        font-family: "Nanum Gothic", sans-serif;
-        font-weight: bolder;
-        font-size: 1.2em;
-        font-style: normal;
-      }
-      .fontright {
-        font-family: "Nanum Gothic", sans-serif;
-        font-weight: bolder;
-        font-size: 1em;
-        font-style: normal;
-      }
-
-      header {
-        background-color: rgb(49, 49, 49);
-        color: white;
-        width: 1000px;
-        height: 150px;
-        /* display: flex; */
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        /* flex-direction: row; */
-        /* justify-content: center; */
-      }
-      header > div {
-        margin-bottom: 3%;
-        margin-left: 5%;
-      }
-      .left {
-        height: 1px;
-        margin-left: 5%;
-        width: 20%;
-        float: left;
-        background-color: black;
-      }
-      .right {
-        width: 65%;
-        height: 1px;
-        margin-right: 5%;
-        float: right;
-        background-color: black;
-      }
-
-      .subright {
-        width: 60%;
-        margin-right: 5%;
-        float: right;
-      }
-      .subleft {
-        width: 30%;
-      }
-
-      .line {
-        width: 100%;
-        height: 0.5px;
-        float: right;
-        margin-bottom: 5px; /* 아래쪽으로 여백을 줌 */
-        margin-top: 5px; /* 위쪽으로 여백을 줌 */
-        /* display: block; */
-        background-color: black;
-      }
-
-      #form {
-        /* display: flex; */
-        /* justify-content: center; */
-        margin: auto;
-        width: 1000px;
-      }
-      header span {
-        position: relative;
-        top: 10px;
-        display: inline-block;
-        animation: bounce 0.3s ease infinite alternate;
-        color: #fff;
-      }
-
-      header span:nth-child(2) {
-        animation-delay: 0.1s;
-      }
-      header span:nth-child(3) {
-        animation-delay: 0.2s;
-      }
-      header span:nth-child(4) {
-        animation-delay: 0.3s;
-      }
-      header span:nth-child(5) {
-        animation-delay: 0.4s;
-      }
-
-      @keyframes bounce {
-        100% {
-          top: -5px;
-        }
+      p {
+        font-size: 2rem;
+        color: blueviolet;
       }
     </style>
-
-    <header id="header">
-      <div class="font title" style="margin-bottom: 5%">
-        <span>자</span>
-        <span>기</span>
-        <span>소</span>
-        <span>개</span>
-        <span>서</span>
-      </div>
-    </header>
-    <div id="form">
-      <main>
-        <br />
-        <section class="left fontleft">
-          <!-- <div class="left"> -->
-          <!-- </div> -->
-          <article style="margin-top: 5px; margin-bottom: 120px">
-            기본정보
-            <br />
-            <span style="color: gray; font-size: 1rem"
-              >Personal Information</span
-            >
-          </article>
-          <div class="line" style="height: 2px"></div>
-          <article style="margin-bottom: 64px">
-            학력사항
-            <br />
-            <span style="color: gray; font-size: 1rem">Education</span>
-          </article>
-          <div class="line" style="height: 2px"></div>
-          <article style="margin-bottom: 64px">
-            취미 <br />
-            <span style="color: gray; font-size: 1rem">Hobby</span>
-          </article>
-          <div class="line" style="height: 2px"></div>
-          <article style="margin-bottom: 180px">
-            프로젝트 <br />
-            <span style="color: gray; font-size: 1rem">Project</span> <br />
-          </article>
-          <div class="line" style="height: 2px"></div>
-          <article style="padding-bottom: 80px">
-            교육사항 <br />
-            <span style="color: gray; font-size: 1rem">Education</span>
-          </article>
-          <div></div>
-        </section>
-        <section class="right fontright">
-          <article style="margin-top: 5px">
-            <span class="subleft">이름</span>
-            <span class="subright">최현욱</span>
-            <br />
-            <div class="line"></div>
-            <span class="subleft"> 생년월일 </span>
-            <span class="subright">1997.04.01</span>
-            <br />
-            <div class="line"></div>
-            <span class="subleft"> 연락처 </span>
-            <span class="subright">010-8350-7890</span>
-            <div class="line"></div>
-            <br />
-            <span class="subleft"> 주소 </span>
-            <span class="subright">고양시 일산서구 주엽동 </span>
-            <div class="line"></div>
-            <br />
-            <span class="subleft"> MBTI </span>
-            <span class="subright">INFP</span>
-            <div class="line" style="margin-bottom: 24px"></div>
-            <div class="line" style="height: 2px"></div>
-          </article>
-          <br />
-          <article>
-            <span class="subleft"> 2017.03 - 2023.02 </span>
-            <span class="subright"
-              >아주대/디지털 미디어 ( 소프트웨어 복수전공 )</span
-            >
-
-            <br />
-            <div class="line" style="margin-bottom: 24px"></div>
-            <div class="line" style="margin-bottom: 24px"></div>
-            <div class="line" style="margin-bottom: 24px"></div>
-          </article>
-          <br />
-          <article>
-            <div class="line" style="height: 2px"></div>
-            <span class="subleft"> 영화감상 </span>
-
-            <div class="line"></div>
-            <br />
-            <span class="subleft"> 풋살 </span>
-            <br />
-            <div class="line" style="margin-bottom: 24px"></div>
-            <div class="line" style="margin-bottom: 24px"></div>
-          </article>
-          <article>
-            <div class="line" style="height: 2px"></div>
-            <span class="subleft"> 2022.10 - 2022.11</span>
-            <span class="subright">러닝크루 모집 웹 서비스</span>
-            <br />
-            <div
-              class="subleft"
-              style="
-                font-size: 0.8em;
-                color: gray;
-                text-align: center;
-                width: 20%;
-              "
-            >
-              1-2개월
-            </div>
-            <br />
-            <br />
-            <div class="line"></div>
-            <span class="subleft"> 2023.08 - 2023.09</span>
-            <span class="subright">룸메이트 매칭 웹 서비스</span>
-            <div
-              class="subleft"
-              style="
-                font-size: 0.8em;
-                color: gray;
-                text-align: center;
-                width: 20%;
-              "
-            >
-              1-2개월
-            </div>
-            <br />
-            <br />
-            <div class="line" style="margin-bottom: 24px"></div>
-            <div style="padding-bottom: 48px"></div>
-            <div style="margin-bottom: 24px"></div>
-            <div style="margin-bottom: 24px"></div>
-          </article>
-          <article>
-            <div class="line" style="height: 2px"></div>
-            <span class="subleft"> 2023.05 - 2023.09 </span>
-            <span class="subright">우리FISA 클라우드 엔지니어링</span>
-            <!-- <div class="line"></div> -->
-            <div class="line" style="margin-bottom: 24px"></div>
-            <div class="line" style="margin-bottom: 24px"></div>
-            <div class="line" style="margin-bottom: 24px"></div>
-          </article>
-        </section>
-      </main>
+  </head>
+  <body>
+    <h1>Winner of this lottery will be you!</h1>
+    <div>
+      <input id="buttonId" type="button" value="click Me" />
     </div>
+    <div>
+      <h2>< LOTTERY ></h2>
+      <p id="normalNumResult"></p>
+      <p id="bonusNumResult"></p>
+    </div>
+    <script src="./js/app.js" defer></script>
   </body>
 </html>
